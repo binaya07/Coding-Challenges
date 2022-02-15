@@ -12,7 +12,7 @@ public class Fibonacci {
     }
 
     /**
-     * Note:
+     * Performance comparison -
      * 1. Recursion is slower than iteration.
      * 2. When using memorization(caching), in this case, as a hashmap, it is slower than normal iteration technique until the position is close to 1 million.
      *    It is because of the additional cost of checking and storing into hashmap. After that certain threshold, it will be faster than normal iteration technique.
