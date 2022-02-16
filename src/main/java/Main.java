@@ -1,6 +1,9 @@
 import codingchallenges.CustomLinkedList;
 import codingchallenges.Tree;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -9,8 +12,8 @@ public class Main {
 //        Prime.checkPrime();
 //        Regex.regex();
 
-//        customLinkedListEx();
-        customTreeEx();
+        customLinkedListEx();
+//        customTreeEx();
     }
 
     public static void customLinkedListEx() {
@@ -18,6 +21,10 @@ public class Main {
         linkedList.add(1);
         linkedList.add(2);
         linkedList.add(0);
+        linkedList.add(5);
+        linkedList.printAll();
+
+        linkedList.reverse();
         linkedList.printAll();
     }
 

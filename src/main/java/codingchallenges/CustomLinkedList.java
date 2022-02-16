@@ -33,6 +33,25 @@ public class CustomLinkedList<T> {
         return head == null;
     }
 
+    public void reverse() {
+        // Return if the list is empty or has only one element(head).
+        if (isEmpty() || head.next == null) {
+            return;
+        }
+        Node<T> currentNode = head;
+        Node<T> nextNode = head.next;
+        head.next = null;
+
+        Node<T> temp;
+        while (nextNode != null) {
+            temp = nextNode.next;
+            nextNode.next = currentNode;
+            currentNode = nextNode;
+            nextNode = temp;
+        }
+        head = currentNode;
+    }
+
     public void printAll() {
         Node<T> currentNode = head;
         while (currentNode != null) {
